@@ -38,3 +38,7 @@
 ## Mapear entidades
 
 - ormconfig -> "entities"
+
+### Fluxo
+
+- Migrations -> Entities -> Repositories -> Service -> Controller -> Route

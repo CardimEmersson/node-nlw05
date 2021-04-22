@@ -3,8 +3,6 @@ import "./database";
 import { routes } from "./routes";
 
 const app = express();
-app.use(express.json());
-app.use(routes);
 /**
  * GET = Buscas
  * POST = Criação
@@ -12,5 +10,8 @@ app.use(routes);
  * DELETE = Deletar
  * PATCH = Alterar uma informação especifica
  */
+
+app.use(express.json());
+app.use(routes);
 
 app.listen(3333, () => console.log("Server is running on port 33333"));

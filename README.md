@@ -42,3 +42,11 @@
 ### Fluxo
 
 - Migrations -> Entities -> Repositories -> Service -> Controller -> Route
+
+### Websocket
+
+- yarn add socket.io
+- yarn add @types/socket.io -D
+- yarn add socket.io-client
+
+- yarn add ejs

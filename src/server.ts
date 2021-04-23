@@ -1,17 +1,34 @@
-import express, { json } from "express";
-import "./database";
-import { routes } from "./routes";
+// import express, { request } from "express";
+// import { createServer } from "http";
+// import { Server, Socket } from "socket.io";
+// import path from "path";
+// import "./database";
+// import { routes } from "./routes";
 
-const app = express();
-/**
- * GET = Buscas
- * POST = Criação
- * PUT = Alteração
- * DELETE = Deletar
- * PATCH = Alterar uma informação especifica
- */
+// const app = express();
 
-app.use(express.json());
-app.use(routes);
+// app.use(express.static(path.join(__dirname, "..", "public")));
+// app.set("views", path.join(__dirname, "..", "public"));
+// app.engine("html", require("ejs").renderFile);
+// app.set("view engine", "html");
 
-app.listen(3333, () => console.log("Server is running on port 33333"));
+// app.get("/pages/client", (request, response) => {
+//   return response.render("html/client.html");
+// });
+
+// const http = createServer(app);
+// const io = new Server(http);
+
+// io.on("connection", (socket: Socket) => {
+//   console.log("Se conectou", socket.id);
+// });
+
+// app.use(express.json());
+// app.use(routes);
+
+// app.listen(3333, () => console.log("Server is running on port 33333"));
+
+import { http } from "./http";
+import "./websocket/client";
+
+http.listen(3333, () => console.log("Server is running on port 33333"));

@@ -20,6 +20,7 @@
 
 - descomentar
 - tsconfig.json -> "experimentalDecorators": true , "emitDecoratorMetadata": true
+- mudar "strict" para false
 
 ## Criar Migrations
 
@@ -41,7 +42,7 @@
 
 ### Fluxo
 
-- Migrations -> Entities -> Repositories -> Service -> Controller -> Route
+- Migrations -> Criar arquivo de conexão com o banco de dados -> Entities -> Repositories -> Service -> Controller -> Route -> run server.ts
 
 ### Websocket
 
